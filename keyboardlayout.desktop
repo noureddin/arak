@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Exec=setxkbmap dvorak,ark1
+X-GNOME-Autostart-enabled=true
+NoDisplay=false
+Hidden=false
+X-GNOME-Autostart-Delay=0
+Name=Keyboard Layout
