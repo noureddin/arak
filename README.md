@@ -56,11 +56,11 @@
 <p dir="rtl">هذا القسم يحتاج للتحسين!</p>
 </blockquote>
 <p dir="rtl">لتثبيت أراك 1، يمكنك تنفيذ هذا الأمر في الطرفية:</p>
-<pre dir="rtl"><code>sudo wget https://raw.githubusercontent.com/noureddin/arak/master/ark1 -O /usr/share/X11/xkb/symbols/ark1</code></pre>
+<pre dir="ltr"><code>sudo wget https://raw.githubusercontent.com/noureddin/arak/master/ark1 -O /usr/share/X11/xkb/symbols/ark1</code></pre>
 <p dir="rtl">ولاستخدامه مع دڤوراك، نفذ هذا الأمر بصلاحيات المستخدم العادي:</p>
-<p dir="rtl"re><code>setxkbmap dvorak,ark1</code></pre>
+<pre dir="ltr"><code>setxkbmap dvorak,ark1</code></pre>
 <p dir="rtl">للأسف قد لا يمكنك اختيار أراك من الواجهة الرسومية؛ عليك تفعيله من سطر الأوامر. لجعل دڤوراك وأراك يعملان من بدء التشغيل، نفّذ هذه الأوامر في الطرفية:</p>
-<pre dir="rtl"><code>mkdir -p ~/.config/autostart
+<pre dir="ltr"><code>mkdir -p ~/.config/autostart
 wget https://raw.githubusercontent.com/noureddin/arak/master/keyboardlayout.desktop -O ~/.config/autostart/keyboardlayout.desktop
 chmod +x ~/.config/autostart/keyboardlayout.desktop
 xdg-open ~/.config/autostart/keyboardlayout.desktop</code></pre>
