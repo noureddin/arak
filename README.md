@@ -39,11 +39,11 @@
 <li dir="rtl">أزرار «لا» و«لأ» و«لآ» إنما وُجدت للآلة الكاتبة، ولا يوجد منطق وراء إضافتها لأزرار الحاسوب؛ أكثرهم انتشارًا أقل من «ال» و«وا».</li>
 <li dir="rtl">إضافة بعض الحروف الفارسية المستخدمة أحيانا في العربية لتمثيل أصوات أجنبية: «پ»، «چ»، «ژ»، «ڤ»، «گ»، والتي يوصل إليها بضغط العالي مع زر الحرف العربي المناظر لها شكلًا.</li>
 <li dir="rtl">إضافة علامتي التنصيص المفضلتين لدى كثيرٍ من الكتاب العرب <code>«»</code>؛ فهي أنسب للنص العربي من التنصيص المرتفع <code>&quot;&quot;</code> الذي قد يشبه تنوينًا أو نقطين. مع الإبقاء على رمزي الأسكي <code>'</code>، <code>&quot;</code>.</li>
-<li dir="rtl"><p dir="rtl">لا وجود للفاصلة الغربية <code>,</code> بين الحروف العربية.</p></li>
+<li dir="rtl">لا وجود للفاصلة الغربية <code>,</code> بين الحروف العربية.</li>
 </ul></li>
 <li dir="rtl">لا حاجة للمستوى الثالث
 <ul>
-<li dir="rtl"><p dir="rtl">في التخطيط التقليدي، المستوى الثالث كان مستخدمًا للوصول لـ<code>«»</code> و«چ» و«پ» و«ڤ»؛ هذه الحروف والرموز في المستوى الثاني مباشرةً الآن.</p></li>
+<li dir="rtl">في التخطيط التقليدي، المستوى الثالث كان مستخدمًا للوصول لـ<code>«»</code> و«چ» و«پ» و«ڤ»؛ هذه الحروف والرموز في المستوى الثاني مباشرةً الآن.</li>
 </ul></li>
 </ul>
 <h3 dir="rtl">تعلم أراك 1</h3>
@@ -60,7 +60,7 @@
 <p dir="rtl">ولاستخدامه مع دڤوراك، نفذ هذا الأمر بصلاحيات المستخدم العادي:</p>
 <p dir="rtl"re><code>setxkbmap dvorak,ark1</code></pre>
 <p dir="rtl">للأسف قد لا يمكنك اختيار أراك من الواجهة الرسومية؛ عليك تفعيله من سطر الأوامر. لجعل دڤوراك وأراك يعملان من بدء التشغيل، نفّذ هذه الأوامر في الطرفية:</p>
-<p dir="rtl"re><code>mkdir -p ~/.config/autostart
+<pre dir="rtl"><code>mkdir -p ~/.config/autostart
 wget https://raw.githubusercontent.com/noureddin/arak/master/keyboardlayout.desktop -O ~/.config/autostart/keyboardlayout.desktop
 chmod +x ~/.config/autostart/keyboardlayout.desktop
 xdg-open ~/.config/autostart/keyboardlayout.desktop</code></pre>
