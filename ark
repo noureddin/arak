@@ -56,15 +56,17 @@ xkb_symbols "basic" {
 };
 
 partial alphanumeric_keys
-xkb_symbols "qwerty" {
-    include "ara(basic)"
-    name[Group1]= "Arabic (qwerty)";
+xkb_symbols "ark11" {
+    name[Group1]= "Arak 1.1";
+    
+    include "ark(basic)"
+    include "nbsp(zwnj2nb3nnb4)"
 };
 
 partial alphanumeric_keys
 xkb_symbols "azerty" {
-    include "ara(basic)"
-    name[Group1]= "Arabic (azerty)";
+    include "ark(basic)"
+    name[Group1]= "Arak (azerty)";
 
 	// The North African Arabic keyboard differs from the Middle East one
 	// by the numeric row; it follows French keyboard style.
@@ -111,8 +113,8 @@ xkb_symbols "digits_KP" {
 
 partial alphanumeric_keys
 xkb_symbols "digits" {
-    include "ara(basic)"
-    name[Group1]= "Arabic (digits)";
+    include "ark(basic)"
+    name[Group1]= "Arak (digits)";
 
     // Use Arabic-script digits on the numeric row.
 
@@ -131,15 +133,9 @@ xkb_symbols "digits" {
 };
 
 partial alphanumeric_keys
-xkb_symbols "qwerty_digits" {
-    include "ara(digits)"
-    name[Group1]= "Arabic (qwerty/digits)";
-};
-
-partial alphanumeric_keys
 xkb_symbols "azerty_digits" {
-    include "ara(azerty)"
-    name[Group1]= "Arabic (azerty/digits)";
+    include "ark(azerty)"
+    name[Group1]= "Arak (azerty/digits)";
 
     key <AE01> {  [       ampersand,       0x1000661      ]       };
     key <AE02> {  [          eacute,       0x1000662      ]       };
@@ -152,4 +148,3 @@ xkb_symbols "azerty_digits" {
     key <AE09> {  [        ccedilla,       0x1000669      ]       };
     key <AE10> {  [          agrave,       0x1000660      ]       };
 };
-
