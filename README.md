@@ -59,13 +59,14 @@
 </blockquote>
 <p dir="rtl">لتثبيت أراك 1، يمكنك تنفيذ هذا الأمر في الطرفية:</p>
 <pre dir="ltr"><code>sudo wget https://raw.githubusercontent.com/noureddin/arak/master/ark -O /usr/share/X11/xkb/symbols/ark</code></pre>
-<p dir="rtl">ولاستخدامه مع دڤوراك، نفذ هذا الأمر بصلاحيات المستخدم العادي:</p>
+<p dir="rtl">ولإضافته إلى الواجهة الرسومية:</p>
+<pre dir="ltr"><code>wget https://raw.githubusercontent.com/noureddin/arak/master/evdev-arak.xml
+cp /usr/share/X11/xkb/rules/evdev.xml ~/.evdev.xml.backup
+perl -pe 'm|&lt;/layoutList&gt;| and print do { local $/; open my $f, "&lt;", "evdev-arak.xml"; &lt;$f&gt; }' ~/.evdev.xml.backup | sudo tee /usr/share/X11/xkb/rules/evdev.xml
+rm evdev-arak.xml</code></pre></p>
+<p dir="rtl">ثم اذهب إلى صفحة تخطيطات لوحات المفاتيح في إعدادات بيئة سطح المكتب الخاصة بك وابحث عن <code>Arak</code>. (إن لم تجده في القائمة، فأعد التشغيل.)</p>
+<p dir="rtl">أو يمكنك تفعيله من الطرفية (لمستخدمي X11). فلاستخدامه مع دڤوراك، نفذ هذا الأمر بصلاحيات المستخدم العادي:</p>
 <pre dir="ltr"><code>setxkbmap dvorak,ark</code></pre>
-<p dir="rtl">للأسف قد لا يمكنك اختيار أراك من الواجهة الرسومية؛ عليك تفعيله من سطر الأوامر. لجعل دڤوراك وأراك يعملان من بدء التشغيل، نفّذ هذه الأوامر في الطرفية:</p>
-<pre dir="ltr"><code>mkdir -p ~/.config/autostart
-wget https://raw.githubusercontent.com/noureddin/arak/master/keyboardlayout.desktop -O ~/.config/autostart/keyboardlayout.desktop
-chmod +x ~/.config/autostart/keyboardlayout.desktop
-xdg-open ~/.config/autostart/keyboardlayout.desktop</code></pre>
 <h2 dir="rtl">أراك 1.1</h2>
 <p dir="rtl">أراك 1.1 هو نفسه أراك 1 بإضافة واحدة هي أن العالي+مسافة يعطي مسافة فاصلة لا عرض لها. وهذه تستخدم في كتابة الأسماء والاختصارات الأعجمية مثل يوإس‌بي، آي‌بي‌إم، پي‌دي‌إف، أسكي‌دكتور، إلخ.</p>
 <h3 dir="rtl">تثبيت واستخدام أراك 1.1</h3>

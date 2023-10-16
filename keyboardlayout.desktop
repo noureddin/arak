@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-# remove the '#' in the next line to have arak1.1 instead of arak1
-Exec=setxkbmap dvorak,ark #-variant ,ark11
-X-GNOME-Autostart-enabled=true
-NoDisplay=false
-Hidden=false
-X-GNOME-Autostart-Delay=0
-Name=Keyboard Layout

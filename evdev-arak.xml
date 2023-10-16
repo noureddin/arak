@@ -1,0 +1,75 @@
+    <layout>
+      <configItem>
+        <name>ark</name>
+        <shortDescription>ark</shortDescription>
+        <description>Arak</description>
+        <countryList>
+          <iso3166Id>AE</iso3166Id>
+          <iso3166Id>BH</iso3166Id>
+          <iso3166Id>DZ</iso3166Id>
+          <iso3166Id>EG</iso3166Id>
+          <iso3166Id>EH</iso3166Id>
+          <iso3166Id>JO</iso3166Id>
+          <iso3166Id>KW</iso3166Id>
+          <iso3166Id>LB</iso3166Id>
+          <iso3166Id>LY</iso3166Id>
+          <iso3166Id>MA</iso3166Id>
+          <iso3166Id>MR</iso3166Id>
+          <iso3166Id>OM</iso3166Id>
+          <iso3166Id>PS</iso3166Id>
+          <iso3166Id>QA</iso3166Id>
+          <iso3166Id>SA</iso3166Id>
+          <iso3166Id>SD</iso3166Id>
+          <iso3166Id>SY</iso3166Id>
+          <iso3166Id>TN</iso3166Id>
+          <iso3166Id>YE</iso3166Id>
+        </countryList>
+        <languageList>
+          <iso639Id>ara</iso639Id>
+        </languageList>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>ark11</name>
+            <description>Arak 1.1</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>azerty</name>
+            <description>Arak (azerty)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>digits</name>
+            <description>Arak (digits)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>azerty_digits</name>
+            <description>Arak (azerty/digits)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>farsi</name>
+            <description>Arak (Farsi)</description>
+            <languageList>
+              <iso639Id>fas</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>urdu</name>
+            <description>Arak (Urdu)</description>
+            <languageList>
+              <iso639Id>urd</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>
