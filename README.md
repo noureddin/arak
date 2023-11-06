@@ -7,7 +7,7 @@
 <p dir="rtl">أراك مُعد ليكون «النسخة العربية من دڤوراك». وهو مبني على <a href="https://gist.github.com/noureddin/d9c3fd68fb07c19f1bb3b34b9fc14dce">إحصاءات حقيقية</a>.</p>
 <p dir="rtl">لا شيء كامل؛ لذا فأراك ليس تخطيطا واحدا بل عائلة. لكنها حاليا عائلة من فرد واحد. هذا لتسهيل تحديث التخطيط متى احتجنا لذلك، وأيضا لضمان استقرار التخطيط المستخدم ومنع إحداث مشاكل بتغيير التخطيط الذي يستخدمه الناس.</p>
 <h2 dir="rtl">أراك 1</h2>
-<p dir="rtl">بعد معرفة <a href="https://gist.github.com/noureddin/d9c3fd68fb07c19f1bb3b34b9fc14dce">تردد الحروف</a>، وُزعت الحروف على لوحة المفاتيح تبعا للخريطة التالية، حيث الزر ذا الرقم الأقل هو الأسهل:</p>
+<p dir="rtl">بعد معرفة تردد الحروف، وُزعت الحروف على لوحة المفاتيح تبعا للخريطة التالية، حيث الزر ذو الرقم الأقل هو الأسهل:</p>
 <pre dir="rtl"><code>9  9  5  2  2  3  4  4  3  2  2  5
   3  1  1  1  1  2  2  1  1  1  1
     5  5  5  4  3  5  3  5  5  5</code></pre>
@@ -52,13 +52,10 @@
 <p dir="rtl">أفضل أداة هي <a href="https://noureddin.github.io/kbt/">مدرب لوحات المفاتيح</a>، والذي يدربك على كلمات حقيقة من أول درس.</p>
 <p dir="rtl">وبعد ذلك يمكنك الانتقال مع الإبقاء على صورة التخطيط للاسترشاد؛ يمكنك نقلها على ورقة أو طباعتها. وعليك الاستمرار بالتمرين يوميا ولو لعشر دقائق. ويمكنك الاستعانة بهذا <a href="https://10fastfingers.com/typing-test/arabic">الموقع</a> أو غيره.</p>
 <h3 dir="rtl">تثبيت أراك 1</h3>
-<blockquote dir="rtl">
-<p dir="rtl">هذا القسم يحتاج للتحسين!</p>
-</blockquote>
 <p dir="rtl">لتثبيت أراك 1، يمكنك تنفيذ هذا الأمر في الطرفية:</p>
-<pre dir="ltr"><code>sudo wget https://raw.githubusercontent.com/noureddin/arak/master/ark -O /usr/share/X11/xkb/symbols/ark</code></pre>
+<pre dir="ltr"><code>sudo wget https://github.com/noureddin/arak/raw/master/ark -O /usr/share/X11/xkb/symbols/ark</code></pre>
 <p dir="rtl">ولإضافته إلى الواجهة الرسومية:</p>
-<pre dir="ltr"><code>wget https://raw.githubusercontent.com/noureddin/arak/master/evdev-arak.xml
+<pre dir="ltr"><code>wget https://github.com/noureddin/arak/raw/master/evdev-arak.xml
 cp /usr/share/X11/xkb/rules/evdev.xml ~/.evdev.xml.backup
 perl -pe 'm|&lt;/layoutList&gt;| and print do { local $/; open my $f, "&lt;", "evdev-arak.xml"; &lt;$f&gt; }' ~/.evdev.xml.backup | sudo tee /usr/share/X11/xkb/rules/evdev.xml
 rm evdev-arak.xml</code></pre></p>
@@ -69,7 +66,7 @@ rm evdev-arak.xml</code></pre></p>
 <p dir="rtl">أراك 1.1 هو نفسه أراك 1 بإضافة واحدة هي أن العالي+مسافة يعطي مسافة فاصلة لا عرض لها. وهذه تستخدم في كتابة الأسماء والاختصارات الأعجمية مثل يوإس‌بي، آي‌بي‌إم، پي‌دي‌إف، أسكي‌دكتور، إلخ.</p>
 <h3 dir="rtl">تثبيت واستخدام أراك 1.1</h3>
 <p dir="rtl">لتثبيت أراك 1.1، يمكنك تنفيذ هذا الأمر في الطرفية:</p>
-<pre dir="ltr"><code>sudo wget https://raw.githubusercontent.com/noureddin/arak/master/ark -O /usr/share/X11/xkb/symbols/ark</code></pre>
+<pre dir="ltr"><code>sudo wget https://github.com/noureddin/arak/raw/master/ark -O /usr/share/X11/xkb/symbols/ark</code></pre>
 <p dir="rtl">ولاستخدامه مع دڤوراك، نفذ هذا الأمر بصلاحيات المستخدم العادي:</p>
 <pre dir="ltr"><code>setxkbmap dvorak,ark -variant ,ark11</code></pre>
 <h2 dir="rtl">ترخيص الاستخدام</h2>
