@@ -20,7 +20,7 @@ As Arak is made for Arabic speakers, the rest of the README is given in Arabic o
 
 بعد معرفة تردد الحروف، وُزعت الحروف على لوحة المفاتيح تبعا للخريطة التالية، حيث الزر ذو الرقم الأقل هو الأسهل:
 
-<pre dir="rtl"><code>9  9  5  2  2  3  4  4  3  2  2  5
+<pre dir=rtl><code>9  9  5  2  2  3  4  4  3  2  2  5
   3  1  1  1  1  2  2  1  1  1  1
     5  5  5  4  3  5  3  5  5  5</code></pre>
     
@@ -64,33 +64,33 @@ As Arak is made for Arabic speakers, the rest of the README is given in Arabic o
 
 لتثبيت أراك 1، يمكنك تنفيذ هذا الأمر في الطرفية:
 
-<pre dir="ltr"><code>sudo wget https://github.com/noureddin/arak/raw/master/ark -O /usr/share/X11/xkb/symbols/ark</code></pre>
+<div align=left dir=ltr><pre><code>sudo wget https://github.com/noureddin/arak/raw/master/ark -O /usr/share/X11/xkb/symbols/ark</code></pre></div>
 
 ولإضافته إلى الواجهة الرسومية:
 
-<pre dir="ltr"><code>wget https://github.com/noureddin/arak/raw/master/evdev-arak.xml
+<div align=left dir=ltr><pre><code>wget https://github.com/noureddin/arak/raw/master/evdev-arak.xml
 cp /usr/share/X11/xkb/rules/evdev.xml ~/.evdev.xml.backup
 perl -pe 'm|&lt;/layoutList&gt;| and print do { local $/; open my $f, "&lt;", "evdev-arak.xml"; &lt;$f&gt; }' ~/.evdev.xml.backup | sudo tee /usr/share/X11/xkb/rules/evdev.xml
-rm evdev-arak.xml</code></pre>
+rm evdev-arak.xml</code></pre></div>
 
 ثم اذهب إلى صفحة تخطيطات لوحات المفاتيح في إعدادات بيئة سطح المكتب الخاصة بك وابحث عن <code>Arak</code>. (إن لم تجده في القائمة، فأعد التشغيل.)
 
 أو يمكنك تفعيله من الطرفية (لمستخدمي X11). فلاستخدامه مع دڤوراك، نفذ هذا الأمر بصلاحيات المستخدم العادي:
 
-<pre dir="ltr"><code>setxkbmap dvorak,ark</code></pre>
+<div align=left dir=ltr><pre><code>setxkbmap dvorak,ark</code></pre></div>
 
 ولإضافته إلى تحويل مفاتيح (<code>keymap</code>) المحرر **NeoVim** لاستعمال أراك مع دڤوراك فيه بسلاسة:
 
-<pre dir="ltr"><code>sudo wget https://github.com/noureddin/arak/raw/master/arak_utf-8.vim -O /usr/share/nvim/runtime/keymap/arak_utf-8.vim</code></pre>
+<div align=left dir=ltr><pre><code>sudo wget https://github.com/noureddin/arak/raw/master/arak_utf-8.vim -O /usr/share/nvim/runtime/keymap/arak_utf-8.vim</code></pre></div>
 
-ثم افتح NeoVim واكتب الأمر <code dir="ltr">:edit $MYVIMRC</code> لتحرير ملف الابتداء، وأضف فيه السطرين التاليين ثم احفظه:
+ثم افتح NeoVim واكتب الأمر <code dir=ltr>:edit $MYVIMRC</code> لتحرير ملف الابتداء، وأضف فيه السطرين التاليين ثم احفظه:
 
-<pre dir="ltr"><code>set keymap=arak
-set iminsert=0</code></pre>
+<div align=left dir=ltr><pre><code>set keymap=arak
+set iminsert=0</code></pre></div>
 
 السطر الأول يفّعل إمكانية التبديل بين التخطيط الإنجليزي الحالي (باعتباره دڤوراك) وتخطيط أراك. ولكنه أيضا يجعل التحويل إلى أراك هو المبدئي. والسطر الثاني يعيد التخطيط المبدئي إلى أصله (أي بغير تحويل).
 
-وبعد تشغيل NeoVim مجددا، استخدم الزر <kbd dir="ltr">Ctrl+^</kbd> **في وضع الإدخال** للتبديل بين التخطيطين؛ هذا يجعل مفاتيحك دڤوراكية في الوضع العادي، لكن عند البحث أو الإدخال (وأوامر الإبدال) ستصير مفاتيحك أراكية.
+وبعد تشغيل NeoVim مجددا، استخدم الزر <kbd dir=ltr>Ctrl+^</kbd> **في وضع الإدخال** للتبديل بين التخطيطين؛ هذا يجعل مفاتيحك دڤوراكية في الوضع العادي، لكن عند البحث أو الإدخال (وأوامر الإبدال) ستصير مفاتيحك أراكية.
 
 ## أراك 1.1
 
@@ -100,11 +100,11 @@ set iminsert=0</code></pre>
 
 لتثبيت أراك 1.1، يمكنك تنفيذ هذا الأمر في الطرفية:
 
-<pre dir="ltr"><code>sudo wget https://github.com/noureddin/arak/raw/master/ark -O /usr/share/X11/xkb/symbols/ark</code></pre>
+<div align=left dir=ltr><pre><code>sudo wget https://github.com/noureddin/arak/raw/master/ark -O /usr/share/X11/xkb/symbols/ark</code></pre></div>
 
 ولاستخدامه مع دڤوراك، نفذ هذا الأمر بصلاحيات المستخدم العادي:
 
-<pre dir="ltr"><code>setxkbmap dvorak,ark -variant ,ark11</code></pre>
+<div align=left dir=ltr><pre><code>setxkbmap dvorak,ark -variant ,ark11</code></pre></div>
 
 ## ترخيص الاستخدام
 
